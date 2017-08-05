@@ -28,6 +28,15 @@ defmodule ThreewirebuildWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
 
+  plug Plug.Static.IndexHtml,
+    at: "/"
+
+  plug Plug.Static,
+    at: "/",
+    from: "priv/3wirebuild/build/",
+    only: ~w(index.html favicon.ico static)
+
+
   # The session will be stored in the cookie and signed,
   # this means its contents can be read but not tampered with.
   # Set :encryption_salt if you would also like to encrypt it.
