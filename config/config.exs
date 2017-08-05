@@ -12,8 +12,8 @@ config :threewirebuild,
 # Configures the endpoint
 config :threewirebuild, ThreewirebuildWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "Iq6p18NHQAQQB53vl+tVGno8GrbtAHnYm1xRekTIoYHESpmxbtkX4jfFDMH+IISY",
-  render_errors: [view: ThreewirebuildWeb.ErrorView, accepts: ~w(html json)],
+  secret_key_base: "KxiGJiCFuOXv1yAkjWuZxzC2olAP7xE7k1cXqGCrjHBmBC/Tf+VZxYyMC/N8QuTQ",
+  render_errors: [view: ThreewirebuildWeb.ErrorView, accepts: ~w(json)],
   pubsub: [name: Threewirebuild.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
